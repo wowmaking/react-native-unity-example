@@ -1041,9 +1041,11 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#1948db":
+"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#fd3b3454":
   version "0.0.1"
-  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/1948dbe122c64a57ac9e6cf60cd8ee3928af2425"
+  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/fd3b34540379eeb7506431f75e8139bd5e5ef991"
+  dependencies:
+    event-target-shim "^5.0.1"
 
 abab@^2.0.0:
   version "2.0.2"

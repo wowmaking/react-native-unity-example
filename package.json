@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@wowmaking/react-native-unity": "github:wowmaking/react-native-unity#1948db",
+    "@wowmaking/react-native-unity": "github:wowmaking/react-native-unity#fd3b3454",
     "react": "16.9.0",
     "react-native": "0.61.1"
   },

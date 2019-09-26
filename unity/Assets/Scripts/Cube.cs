@@ -6,12 +6,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Events;
 
-
-public class NativeAPI
-{
-   [DllImport("__Internal")]
-   public static extern void sendMessage(string message);
-}
+using Wowmaking.RNU;
 
 public class Cube : MonoBehaviour
 {
@@ -52,28 +47,16 @@ public class Cube : MonoBehaviour
     }
 
 
-    void showHostMainWindow()
+    void showHostMainWindow(int n)
     {
-#if UNITY_ANDROID
-            try
-            {
-                AndroidJavaClass jc = new AndroidJavaClass("com.company.product.OverrideUnityActivity");
-                AndroidJavaObject overrideActivity = jc.GetStatic<AndroidJavaObject>("instance");
-                overrideActivity.Call("showMainActivity", lastStringColor);
-            } catch(Exception e)
-            {
-                appendToText("Exception during showHostMainWindow");
-                appendToText(e.Message);
-            }
-#elif UNITY_IOS
-            NativeAPI.sendMessage("{\"a\": \"Test\", \"b\": \"Yeah!\", \"c\": 234}");
-#endif
+        Bridge.sendEvent("test", new { number = n, });
     }
 
     void OnGUI()
     {
         if (GUI.Button(new Rect(10, 10, 200, 100), "Red")) ChangeColor("red");
         if (GUI.Button(new Rect(10, 110, 200, 100), "Blue")) ChangeColor("blue");
-        if (GUI.Button(new Rect(10, 300, 400, 100), "Show Main With Color")) showHostMainWindow();
+        if (GUI.Button(new Rect(10, 310, 200, 100), "1")) showHostMainWindow(1);
+        if (GUI.Button(new Rect(10, 410, 200, 100), "2")) showHostMainWindow(2);
     }
 }
