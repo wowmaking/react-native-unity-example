@@ -17,6 +17,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rnuexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnuexTests.m */; };
 		55193097270D0746EA115E78 /* libPods-rnuex-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB5F52C8593EA405A745821 /* libPods-rnuex-tvOSTests.a */; };
+		61C1B4E6233CA86B001B8A26 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61C1B4E4233CA86B001B8A26 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		856BA3EFE3930F4436ED02C9 /* libPods-rnuex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 238A899DAACF36419492D2EB /* libPods-rnuex.a */; };
 		DA7F683335B770DFE024C22F /* libPods-rnuexTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362E86C4AB25C932B6B89516 /* libPods-rnuexTests.a */; };
 		DE64D2A8EBC0D9E52316BFED /* libPods-rnuex-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6067FFDA7AB66E10509785 /* libPods-rnuex-tvOS.a */; };
@@ -39,6 +40,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		61C1B4E7233CA86B001B8A26 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61C1B4E6233CA86B001B8A26 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* rnuexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnuexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +72,7 @@
 		362E86C4AB25C932B6B89516 /* libPods-rnuexTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnuexTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		433B9C58F0FBDFDB4A41F6FD /* Pods-rnuex-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnuex-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rnuex-tvOS/Pods-rnuex-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6076580AA10ED16EF6273828 /* Pods-rnuex-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnuex-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rnuex-tvOS/Pods-rnuex-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		61C1B4E4233CA86B001B8A26 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		802BE4796B52703B76E5EFF9 /* Pods-rnuexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnuexTests.release.xcconfig"; path = "Target Support Files/Pods-rnuexTests/Pods-rnuexTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7A327A6E6755393BDAC5BCF /* Pods-rnuex-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnuex-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rnuex-tvOSTests/Pods-rnuex-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CDD2445BE7422D058D2612D9 /* Pods-rnuex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnuex.release.xcconfig"; path = "Target Support Files/Pods-rnuex/Pods-rnuex.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +177,6 @@
 				F3ED6F7A738C99FFFA5E6956 /* Pods-rnuexTests.debug.xcconfig */,
 				802BE4796B52703B76E5EFF9 /* Pods-rnuexTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +190,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				61C1B4E4233CA86B001B8A26 /* UnityFramework.framework */,
 				13B07FAE1A68108700A75B9A /* rnuex */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rnuexTests */,
@@ -226,6 +242,7 @@
 			buildPhases = (
 				E7F9BBC610F70457FCB87FEF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
+				61C1B4E7233CA86B001B8A26 /* Embed Frameworks */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -308,6 +325,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

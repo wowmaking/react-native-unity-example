@@ -9,8 +9,8 @@ using UnityEngine.Events;
 
 public class NativeAPI
 {
-    [DllImport("__Internal")]
-    public static extern void sendMessage(string message);
+   [DllImport("__Internal")]
+   public static extern void sendMessage(string message);
 }
 
 public class Cube : MonoBehaviour

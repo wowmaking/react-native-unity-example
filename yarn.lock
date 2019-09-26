@@ -1041,6 +1041,10 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
+"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#1948db":
+  version "0.0.1"
+  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/1948dbe122c64a57ac9e6cf60cd8ee3928af2425"
+
 abab@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.2.tgz#a2fba1b122c69a85caa02d10f9270c7219709a9d"
