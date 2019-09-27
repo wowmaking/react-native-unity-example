@@ -8,11 +8,17 @@ using UnityEngine.Events;
 
 using Wowmaking.RNU;
 
-public class Cube : MonoBehaviour
+public class Cube : MonoBehaviour, IRNCommandsReciever
 {
 
     public Text text;
+
     void appendToText(string line) { text.text += line + "\n"; }
+
+    private void Awake()
+    {
+        RNBridge.SetCommandsReciever(this);
+    }
 
     void Update()
     {
@@ -49,7 +55,13 @@ public class Cube : MonoBehaviour
 
     void showHostMainWindow(int n)
     {
-        Bridge.sendEvent("test", new { number = n, });
+        RNBridge.SendEvent("test", new { number = n, });
+    }
+
+    public void HandleCommand(RNCommand command)
+    {
+        appendToText("Command ID: " + command.id.ToString());
+        appendToText("Command Name: " + command.name);
     }
 
     void OnGUI()
