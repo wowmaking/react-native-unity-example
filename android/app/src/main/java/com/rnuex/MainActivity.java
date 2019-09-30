@@ -1,8 +1,8 @@
 package com.rnuex;
 
-import com.facebook.react.ReactActivity;
+import com.reactlibrary.UnityReactActivity;
 
-public class MainActivity extends ReactActivity {
+public class MainActivity extends UnityReactActivity {
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
