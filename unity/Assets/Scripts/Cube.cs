@@ -8,7 +8,7 @@ using UnityEngine.Events;
 
 using Wowmaking.RNU;
 
-public class Cube : MonoBehaviour, IRNCommandsReciever
+public class Cube : MonoBehaviour, IRNCommandsReceiver
 {
 
     public Text text;
@@ -17,7 +17,7 @@ public class Cube : MonoBehaviour, IRNCommandsReciever
 
     private void Awake()
     {
-        RNBridge.SetCommandsReciever(this);
+        RNBridge.SetCommandsReceiver(this);
     }
 
     void Update()
@@ -60,6 +60,22 @@ public class Cube : MonoBehaviour, IRNCommandsReciever
 
     public void HandleCommand(RNCommand command)
     {
+        switch (command.name)
+        {
+            case "resolve_command":
+                command.Resolve(new {
+                    a = "test_data",
+                    b = 123,
+                });
+                break;
+
+            case "reject_command":
+                command.Reject(new
+                {
+                    error = "test_data error",
+                });
+                break;
+        }
         appendToText("Command ID: " + command.id.ToString());
         appendToText("Command Name: " + command.name);
     }
