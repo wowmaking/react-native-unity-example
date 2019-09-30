@@ -133,6 +133,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
     }
     splits {
         abi {
@@ -181,6 +184,9 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation project(':unityLibrary')
+    implementation files("${project(':unityLibrary').projectDir}/libs/unity-classes.jar")
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
