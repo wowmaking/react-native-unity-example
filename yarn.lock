@@ -1041,9 +1041,10 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#fd3b3454":
+"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#0ebef32":
   version "0.0.1"
-  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/fd3b34540379eeb7506431f75e8139bd5e5ef991"
+  uid "0ebef32b6b7ebf421b3a3c2abb55c8e5063c06d2"
+  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/0ebef32b6b7ebf421b3a3c2abb55c8e5063c06d2"
   dependencies:
     event-target-shim "^5.0.1"
 
@@ -1096,9 +1097,9 @@ acorn-walk@^6.0.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^5.5.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1:
   version "6.3.0"
