@@ -1041,9 +1041,10 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#fd3b3454":
+"@wowmaking/react-native-unity@github:wowmaking/react-native-unity#0ebef32":
   version "0.0.1"
-  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/fd3b34540379eeb7506431f75e8139bd5e5ef991"
+  uid "0ebef32b6b7ebf421b3a3c2abb55c8e5063c06d2"
+  resolved "https://codeload.github.com/wowmaking/react-native-unity/tar.gz/0ebef32b6b7ebf421b3a3c2abb55c8e5063c06d2"
   dependencies:
     event-target-shim "^5.0.1"
 
@@ -2896,9 +2897,9 @@ hermes-engine@^0.2.1:
   integrity sha512-eNHUQHuadDMJARpaqvlCZoK/Nitpj6oywq3vQ3wCwEsww5morX34mW5PmKWQTO7aU0ck0hgulxR+EVDlXygGxQ==
 
 hosted-git-info@^2.1.4:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.4.tgz#44119abaf4bc64692a16ace34700fed9c03e2546"
-  integrity sha512-pzXIvANXEFrc5oFFXRMkbLPQ2rXRoDERwDLyrcUxGhaZhgP54BBSl9Oheh7Vv0T090cszWBxPjkQQ5Sq1PbBRQ==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"
